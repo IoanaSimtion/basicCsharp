@@ -74,10 +74,13 @@ namespace basic
                 string text = "";
                 text += "Your name is " + txtFirstName.Text + " " + txtLastName.Text + "\n";
                 text += "Your email adress is " + txtEmail.Text + "\n";
+                text += "Gender: ";
+                text += rbtnMale.Checked ? "male\n" : "female\n";
                 text += "The emergency contact is " + txtEmergency.Text + "\n";
-                text += cbxNoRoom.Checked ? "No room selected\n" : "";
-                text += cbxSingle.Checked ? "Single  room selected\n" : "";
-                text += cbxShared.Checked ? "Shared room selected\n" : "";
+                text += rbtnYes.Checked ? "No parking required\n" : "Parking required\n";
+                text += rbtnNoRoom.Checked ? "No room selected\n" : "";
+                text += rbtnSingle.Checked ? "Single room selected\n" : "";
+                text += rbtnShared.Checked ? "Shared room selected\n" : "";
                 if (!cbxNone.Checked)
                 {
                     text += "Dietary restrictions: ";
@@ -94,7 +97,7 @@ namespace basic
                 text += cbxLuncheon.Checked ? "Luncheon " : "";
                 text += cbxHall.Checked ? "Town Hall" : "";
 
-                text += cbxYes2.Checked ? "\nYou will see the list" : "\nYou will not see the list";
+                text += rbtnYes2.Checked ? "\nYou will see the list" : "\nYou will not see the list";
 
                 MessageBox.Show(text, "Info", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
@@ -120,15 +123,10 @@ namespace basic
             {
                 text += "Enter your email adress\n";
             }
-
-            if(!cbxFemale.Checked && !cbxMale.Checked)
+           
+            if(!rbtnFemale.Checked && !rbtnMale.Checked)
             {
                 text += "Select your gender\n";
-            }
-
-            if (cbxFemale.Checked && cbxMale.Checked)
-            {
-                text += "Select only one gender\n";
             }
 
             if(txtPhone.Text.Equals(""))
@@ -141,25 +139,16 @@ namespace basic
                 text += "Enter an emergency contact\n";
             }
 
-            if(!cbxYes.Checked && !cbxNo.Checked)
+            if(!rbtnYes.Checked && !rbtnNo.Checked)
             {
                 text += "Do you require parking?\n";
             } 
-            
-            if(cbxYes.Checked && cbxNo.Checked)
-            {
-                text += "Invalid parking selection\n";
-            }
 
-            if(!cbxSingle.Checked && !cbxShared.Checked && !cbxNoRoom.Checked)
+            if(!rbtnSingle.Checked && !rbtnShared.Checked && !rbtnNoRoom.Checked)
             {
                 text += "Select your room preference\n";
             }
 
-            if(cbxSingle.Checked && cbxShared.Checked && cbxNoRoom.Checked)
-            {
-                text += "Invalid room selection\n";
-            }
 
             if(!cbxNone.Checked && !cbxVegetarian.Checked && !cbxGluten.Checked && !cbxLactose.Checked && !cbxNut.Checked && !cbxShellfish.Checked)
             {
@@ -179,15 +168,10 @@ namespace basic
                 text += "Select what activities you will attend\n";
             }
 
-            if(!cbxYes2.Checked && !cbxNo2.Checked)
+            if(!rbtnYes2.Checked && !rbtnNo2.Checked)
             {
                 text += "Do you want to see the list?\n";
-            }
-
-             if(cbxYes2.Checked && cbxNo2.Checked)
-            {
-                text += "Invalid list preference selection\n";
-            }            
+            }         
 
             if (text.Length > 0)
             {
@@ -206,6 +190,31 @@ namespace basic
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnMale_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnYes_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbtnNo2_CheckedChanged(object sender, EventArgs e)
         {
 
         }

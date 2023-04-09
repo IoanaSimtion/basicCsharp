@@ -42,17 +42,9 @@
             this.lblParking = new System.Windows.Forms.Label();
             this.lblRoom = new System.Windows.Forms.Label();
             this.lblaRestrictions = new System.Windows.Forms.Label();
-            this.lblList = new System.Windows.Forms.Label();
             this.lblActivities = new System.Windows.Forms.Label();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.cbxMale = new System.Windows.Forms.CheckBox();
-            this.cbxFemale = new System.Windows.Forms.CheckBox();
-            this.cbxYes = new System.Windows.Forms.CheckBox();
-            this.cbxNo = new System.Windows.Forms.CheckBox();
-            this.cbxSingle = new System.Windows.Forms.CheckBox();
-            this.cbxShared = new System.Windows.Forms.CheckBox();
-            this.cbxNoRoom = new System.Windows.Forms.CheckBox();
             this.cbxNone = new System.Windows.Forms.CheckBox();
             this.cbxVegetarian = new System.Windows.Forms.CheckBox();
             this.cbxGluten = new System.Windows.Forms.CheckBox();
@@ -62,8 +54,24 @@
             this.cbxGala = new System.Windows.Forms.CheckBox();
             this.cbxLuncheon = new System.Windows.Forms.CheckBox();
             this.cbxHall = new System.Windows.Forms.CheckBox();
-            this.cbxYes2 = new System.Windows.Forms.CheckBox();
-            this.cbxNo2 = new System.Windows.Forms.CheckBox();
+            this.lblList = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbtnFemale = new System.Windows.Forms.RadioButton();
+            this.rbtnMale = new System.Windows.Forms.RadioButton();
+            this.rbtnSingle = new System.Windows.Forms.RadioButton();
+            this.rbtnYes = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbtnNo = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbtnShared = new System.Windows.Forms.RadioButton();
+            this.rbtnNoRoom = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.rbtnNo2 = new System.Windows.Forms.RadioButton();
+            this.rbtnYes2 = new System.Windows.Forms.RadioButton();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblRegistration
@@ -182,7 +190,7 @@
             // 
             this.lblParking.AutoSize = true;
             this.lblParking.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblParking.Location = new System.Drawing.Point(12, 418);
+            this.lblParking.Location = new System.Drawing.Point(13, 424);
             this.lblParking.Name = "lblParking";
             this.lblParking.Size = new System.Drawing.Size(202, 22);
             this.lblParking.TabIndex = 13;
@@ -209,19 +217,6 @@
             this.lblaRestrictions.TabIndex = 21;
             this.lblaRestrictions.Text = "Do you have dietary restrictions?";
             // 
-            // lblList
-            // 
-            this.lblList.AccessibleDescription = "";
-            this.lblList.AutoSize = true;
-            this.lblList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblList.Location = new System.Drawing.Point(296, 478);
-            this.lblList.Name = "lblList";
-            this.lblList.Size = new System.Drawing.Size(709, 22);
-            this.lblList.TabIndex = 22;
-            this.lblList.Text = "Do you want to see the list of other attendees and their profiles on the official" +
-    " avent app?";
-            this.lblList.Click += new System.EventHandler(this.label1_Click_1);
-            // 
             // lblActivities
             // 
             this.lblActivities.AutoSize = true;
@@ -235,7 +230,7 @@
             // btnInfo
             // 
             this.btnInfo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnInfo.Location = new System.Drawing.Point(813, 588);
+            this.btnInfo.Location = new System.Drawing.Point(813, 599);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.Size = new System.Drawing.Size(170, 47);
             this.btnInfo.TabIndex = 34;
@@ -249,91 +244,13 @@
             this.btnSubmit.AutoEllipsis = true;
             this.btnSubmit.Enabled = false;
             this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSubmit.Location = new System.Drawing.Point(889, 652);
+            this.btnSubmit.Location = new System.Drawing.Point(889, 662);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(94, 29);
             this.btnSubmit.TabIndex = 35;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // cbxMale
-            // 
-            this.cbxMale.AutoSize = true;
-            this.cbxMale.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxMale.Location = new System.Drawing.Point(112, 243);
-            this.cbxMale.Name = "cbxMale";
-            this.cbxMale.Size = new System.Drawing.Size(66, 23);
-            this.cbxMale.TabIndex = 36;
-            this.cbxMale.Text = "Male";
-            this.cbxMale.UseVisualStyleBackColor = true;
-            this.cbxMale.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // cbxFemale
-            // 
-            this.cbxFemale.AutoSize = true;
-            this.cbxFemale.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxFemale.Location = new System.Drawing.Point(228, 242);
-            this.cbxFemale.Name = "cbxFemale";
-            this.cbxFemale.Size = new System.Drawing.Size(81, 23);
-            this.cbxFemale.TabIndex = 37;
-            this.cbxFemale.Text = "Female";
-            this.cbxFemale.UseVisualStyleBackColor = true;
-            // 
-            // cbxYes
-            // 
-            this.cbxYes.AutoSize = true;
-            this.cbxYes.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxYes.Location = new System.Drawing.Point(220, 419);
-            this.cbxYes.Name = "cbxYes";
-            this.cbxYes.Size = new System.Drawing.Size(55, 23);
-            this.cbxYes.TabIndex = 38;
-            this.cbxYes.Text = "Yes";
-            this.cbxYes.UseVisualStyleBackColor = true;
-            // 
-            // cbxNo
-            // 
-            this.cbxNo.AutoSize = true;
-            this.cbxNo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxNo.Location = new System.Drawing.Point(281, 419);
-            this.cbxNo.Name = "cbxNo";
-            this.cbxNo.Size = new System.Drawing.Size(52, 23);
-            this.cbxNo.TabIndex = 39;
-            this.cbxNo.Text = "No";
-            this.cbxNo.UseVisualStyleBackColor = true;
-            // 
-            // cbxSingle
-            // 
-            this.cbxSingle.AutoSize = true;
-            this.cbxSingle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxSingle.Location = new System.Drawing.Point(112, 501);
-            this.cbxSingle.Name = "cbxSingle";
-            this.cbxSingle.Size = new System.Drawing.Size(120, 23);
-            this.cbxSingle.TabIndex = 40;
-            this.cbxSingle.Text = "Single Room";
-            this.cbxSingle.UseVisualStyleBackColor = true;
-            // 
-            // cbxShared
-            // 
-            this.cbxShared.AutoSize = true;
-            this.cbxShared.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxShared.Location = new System.Drawing.Point(109, 530);
-            this.cbxShared.Name = "cbxShared";
-            this.cbxShared.Size = new System.Drawing.Size(123, 23);
-            this.cbxShared.TabIndex = 41;
-            this.cbxShared.Text = "Shared Room";
-            this.cbxShared.UseVisualStyleBackColor = true;
-            // 
-            // cbxNoRoom
-            // 
-            this.cbxNoRoom.AutoSize = true;
-            this.cbxNoRoom.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxNoRoom.Location = new System.Drawing.Point(109, 559);
-            this.cbxNoRoom.Name = "cbxNoRoom";
-            this.cbxNoRoom.Size = new System.Drawing.Size(154, 23);
-            this.cbxNoRoom.TabIndex = 42;
-            this.cbxNoRoom.Text = "No Room Needed";
-            this.cbxNoRoom.UseVisualStyleBackColor = true;
             // 
             // cbxNone
             // 
@@ -434,35 +351,182 @@
             this.cbxHall.Text = "Town Hall";
             this.cbxHall.UseVisualStyleBackColor = true;
             // 
-            // cbxYes2
+            // lblList
             // 
-            this.cbxYes2.AutoSize = true;
-            this.cbxYes2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxYes2.Location = new System.Drawing.Point(665, 530);
-            this.cbxYes2.Name = "cbxYes2";
-            this.cbxYes2.Size = new System.Drawing.Size(55, 23);
-            this.cbxYes2.TabIndex = 52;
-            this.cbxYes2.Text = "Yes";
-            this.cbxYes2.UseVisualStyleBackColor = true;
+            this.lblList.AccessibleDescription = "";
+            this.lblList.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblList.Location = new System.Drawing.Point(619, 450);
+            this.lblList.Name = "lblList";
+            this.lblList.Size = new System.Drawing.Size(289, 74);
+            this.lblList.TabIndex = 22;
+            this.lblList.Text = "Do you want to see the list of other attendees and their profiles on the official" +
+    " event app?";
+            this.lblList.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // cbxNo2
+            // groupBox1
             // 
-            this.cbxNo2.AutoSize = true;
-            this.cbxNo2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbxNo2.Location = new System.Drawing.Point(778, 530);
-            this.cbxNo2.Name = "cbxNo2";
-            this.cbxNo2.Size = new System.Drawing.Size(52, 23);
-            this.cbxNo2.TabIndex = 53;
-            this.cbxNo2.Text = "No";
-            this.cbxNo2.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.rbtnFemale);
+            this.groupBox1.Controls.Add(this.rbtnMale);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(112, 220);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(228, 61);
+            this.groupBox1.TabIndex = 54;
+            this.groupBox1.TabStop = false;
+            // 
+            // rbtnFemale
+            // 
+            this.rbtnFemale.AutoSize = true;
+            this.rbtnFemale.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnFemale.Location = new System.Drawing.Point(142, 21);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Size = new System.Drawing.Size(80, 23);
+            this.rbtnFemale.TabIndex = 1;
+            this.rbtnFemale.TabStop = true;
+            this.rbtnFemale.Text = "Female";
+            this.rbtnFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbtnMale
+            // 
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnMale.Location = new System.Drawing.Point(6, 21);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(65, 23);
+            this.rbtnMale.TabIndex = 0;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Male";
+            this.rbtnMale.UseVisualStyleBackColor = true;
+            this.rbtnMale.CheckedChanged += new System.EventHandler(this.rbtnMale_CheckedChanged);
+            // 
+            // rbtnSingle
+            // 
+            this.rbtnSingle.AutoSize = true;
+            this.rbtnSingle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnSingle.Location = new System.Drawing.Point(6, 26);
+            this.rbtnSingle.Name = "rbtnSingle";
+            this.rbtnSingle.Size = new System.Drawing.Size(119, 23);
+            this.rbtnSingle.TabIndex = 55;
+            this.rbtnSingle.TabStop = true;
+            this.rbtnSingle.Text = "Single Room";
+            this.rbtnSingle.UseVisualStyleBackColor = true;
+            this.rbtnSingle.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
+            // 
+            // rbtnYes
+            // 
+            this.rbtnYes.AutoSize = true;
+            this.rbtnYes.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnYes.Location = new System.Drawing.Point(6, 16);
+            this.rbtnYes.Name = "rbtnYes";
+            this.rbtnYes.Size = new System.Drawing.Size(54, 23);
+            this.rbtnYes.TabIndex = 56;
+            this.rbtnYes.TabStop = true;
+            this.rbtnYes.Text = "Yes";
+            this.rbtnYes.UseVisualStyleBackColor = true;
+            this.rbtnYes.CheckedChanged += new System.EventHandler(this.rbtnYes_CheckedChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rbtnNo);
+            this.groupBox2.Controls.Add(this.rbtnYes);
+            this.groupBox2.Location = new System.Drawing.Point(221, 408);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(119, 47);
+            this.groupBox2.TabIndex = 57;
+            this.groupBox2.TabStop = false;
+            // 
+            // rbtnNo
+            // 
+            this.rbtnNo.AutoSize = true;
+            this.rbtnNo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnNo.Location = new System.Drawing.Point(66, 16);
+            this.rbtnNo.Name = "rbtnNo";
+            this.rbtnNo.Size = new System.Drawing.Size(51, 23);
+            this.rbtnNo.TabIndex = 57;
+            this.rbtnNo.TabStop = true;
+            this.rbtnNo.Text = "No";
+            this.rbtnNo.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.rbtnNoRoom);
+            this.groupBox3.Controls.Add(this.rbtnShared);
+            this.groupBox3.Controls.Add(this.rbtnSingle);
+            this.groupBox3.Location = new System.Drawing.Point(112, 485);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(226, 123);
+            this.groupBox3.TabIndex = 58;
+            this.groupBox3.TabStop = false;
+            // 
+            // rbtnShared
+            // 
+            this.rbtnShared.AutoSize = true;
+            this.rbtnShared.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnShared.Location = new System.Drawing.Point(6, 55);
+            this.rbtnShared.Name = "rbtnShared";
+            this.rbtnShared.Size = new System.Drawing.Size(122, 23);
+            this.rbtnShared.TabIndex = 56;
+            this.rbtnShared.TabStop = true;
+            this.rbtnShared.Text = "Shared Room";
+            this.rbtnShared.UseVisualStyleBackColor = true;
+            this.rbtnShared.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // rbtnNoRoom
+            // 
+            this.rbtnNoRoom.AutoSize = true;
+            this.rbtnNoRoom.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnNoRoom.Location = new System.Drawing.Point(6, 84);
+            this.rbtnNoRoom.Name = "rbtnNoRoom";
+            this.rbtnNoRoom.Size = new System.Drawing.Size(153, 23);
+            this.rbtnNoRoom.TabIndex = 57;
+            this.rbtnNoRoom.TabStop = true;
+            this.rbtnNoRoom.Text = "No Room Needed";
+            this.rbtnNoRoom.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.rbtnYes2);
+            this.groupBox4.Controls.Add(this.rbtnNo2);
+            this.groupBox4.Location = new System.Drawing.Point(665, 524);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(165, 49);
+            this.groupBox4.TabIndex = 59;
+            this.groupBox4.TabStop = false;
+            // 
+            // rbtnNo2
+            // 
+            this.rbtnNo2.AutoSize = true;
+            this.rbtnNo2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnNo2.Location = new System.Drawing.Point(95, 16);
+            this.rbtnNo2.Name = "rbtnNo2";
+            this.rbtnNo2.Size = new System.Drawing.Size(51, 23);
+            this.rbtnNo2.TabIndex = 0;
+            this.rbtnNo2.TabStop = true;
+            this.rbtnNo2.Text = "No";
+            this.rbtnNo2.UseVisualStyleBackColor = true;
+            this.rbtnNo2.CheckedChanged += new System.EventHandler(this.rbtnNo2_CheckedChanged);
+            // 
+            // rbtnYes2
+            // 
+            this.rbtnYes2.AutoSize = true;
+            this.rbtnYes2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rbtnYes2.Location = new System.Drawing.Point(6, 16);
+            this.rbtnYes2.Name = "rbtnYes2";
+            this.rbtnYes2.Size = new System.Drawing.Size(54, 23);
+            this.rbtnYes2.TabIndex = 1;
+            this.rbtnYes2.TabStop = true;
+            this.rbtnYes2.Text = "Yes";
+            this.rbtnYes2.UseVisualStyleBackColor = true;
             // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1017, 703);
-            this.Controls.Add(this.cbxNo2);
-            this.Controls.Add(this.cbxYes2);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cbxHall);
             this.Controls.Add(this.cbxLuncheon);
             this.Controls.Add(this.cbxGala);
@@ -472,13 +536,6 @@
             this.Controls.Add(this.cbxGluten);
             this.Controls.Add(this.cbxVegetarian);
             this.Controls.Add(this.cbxNone);
-            this.Controls.Add(this.cbxNoRoom);
-            this.Controls.Add(this.cbxShared);
-            this.Controls.Add(this.cbxSingle);
-            this.Controls.Add(this.cbxNo);
-            this.Controls.Add(this.cbxYes);
-            this.Controls.Add(this.cbxFemale);
-            this.Controls.Add(this.cbxMale);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.lblActivities);
@@ -499,6 +556,14 @@
             this.Controls.Add(this.lblRegistration);
             this.Name = "Registration";
             this.Text = "Registration";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -520,17 +585,9 @@
         private Label lblParking;
         private Label lblRoom;
         private Label lblaRestrictions;
-        private Label lblList;
         private Label lblActivities;
         private Button btnInfo;
         private Button btnSubmit;
-        private CheckBox cbxMale;
-        private CheckBox cbxFemale;
-        private CheckBox cbxYes;
-        private CheckBox cbxNo;
-        private CheckBox cbxSingle;
-        private CheckBox cbxShared;
-        private CheckBox cbxNoRoom;
         private CheckBox cbxNone;
         private CheckBox cbxVegetarian;
         private CheckBox cbxGluten;
@@ -540,7 +597,19 @@
         private CheckBox cbxGala;
         private CheckBox cbxLuncheon;
         private CheckBox cbxHall;
-        private CheckBox cbxYes2;
-        private CheckBox cbxNo2;
+        private Label lblList;
+        private GroupBox groupBox1;
+        private RadioButton rbtnFemale;
+        private RadioButton rbtnMale;
+        private RadioButton rbtnSingle;
+        private RadioButton rbtnYes;
+        private GroupBox groupBox2;
+        private RadioButton rbtnNo;
+        private GroupBox groupBox3;
+        private RadioButton rbtnNoRoom;
+        private RadioButton rbtnShared;
+        private GroupBox groupBox4;
+        private RadioButton rbtnYes2;
+        private RadioButton rbtnNo2;
     }
 }

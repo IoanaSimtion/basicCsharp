@@ -35,35 +35,35 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblGender = new System.Windows.Forms.Label();
-            this.rbtnMale = new System.Windows.Forms.RadioButton();
-            this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblEmergency = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtEmergency = new System.Windows.Forms.TextBox();
             this.lblParking = new System.Windows.Forms.Label();
-            this.rbtnYes = new System.Windows.Forms.RadioButton();
-            this.rbtnNone = new System.Windows.Forms.RadioButton();
-            this.rbtnNo = new System.Windows.Forms.RadioButton();
             this.lblRoom = new System.Windows.Forms.Label();
-            this.rbtnSingle = new System.Windows.Forms.RadioButton();
-            this.rbtnShared = new System.Windows.Forms.RadioButton();
-            this.rbtnNoRoom = new System.Windows.Forms.RadioButton();
             this.lblaRestrictions = new System.Windows.Forms.Label();
             this.lblList = new System.Windows.Forms.Label();
-            this.rbtnVegetarian = new System.Windows.Forms.RadioButton();
-            this.rbtnGluten = new System.Windows.Forms.RadioButton();
-            this.rbtnLactose = new System.Windows.Forms.RadioButton();
-            this.rbtnNut = new System.Windows.Forms.RadioButton();
-            this.rbtnShellfish = new System.Windows.Forms.RadioButton();
             this.lblActivities = new System.Windows.Forms.Label();
-            this.rbtnGala = new System.Windows.Forms.RadioButton();
-            this.rbtnLuncheon = new System.Windows.Forms.RadioButton();
-            this.rbtnHall = new System.Windows.Forms.RadioButton();
-            this.rbtnYes2 = new System.Windows.Forms.RadioButton();
-            this.rbtnNo2 = new System.Windows.Forms.RadioButton();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.cbxMale = new System.Windows.Forms.CheckBox();
+            this.cbxFemale = new System.Windows.Forms.CheckBox();
+            this.cbxYes = new System.Windows.Forms.CheckBox();
+            this.cbxNo = new System.Windows.Forms.CheckBox();
+            this.cbxSingle = new System.Windows.Forms.CheckBox();
+            this.cbxShared = new System.Windows.Forms.CheckBox();
+            this.cbxNoRoom = new System.Windows.Forms.CheckBox();
+            this.cbxNone = new System.Windows.Forms.CheckBox();
+            this.cbxVegetarian = new System.Windows.Forms.CheckBox();
+            this.cbxGluten = new System.Windows.Forms.CheckBox();
+            this.cbxLactose = new System.Windows.Forms.CheckBox();
+            this.cbxNut = new System.Windows.Forms.CheckBox();
+            this.cbxShellfish = new System.Windows.Forms.CheckBox();
+            this.cbxGala = new System.Windows.Forms.CheckBox();
+            this.cbxLuncheon = new System.Windows.Forms.CheckBox();
+            this.cbxHall = new System.Windows.Forms.CheckBox();
+            this.cbxYes2 = new System.Windows.Forms.CheckBox();
+            this.cbxNo2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblRegistration
@@ -95,6 +95,7 @@
             this.txtFirstName.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtFirstName.Location = new System.Drawing.Point(112, 138);
             this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.PlaceholderText = "First Name";
             this.txtFirstName.Size = new System.Drawing.Size(102, 27);
             this.txtFirstName.TabIndex = 2;
             this.txtFirstName.Tag = "";
@@ -105,6 +106,7 @@
             this.txtLastName.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtLastName.Location = new System.Drawing.Point(228, 138);
             this.txtLastName.Name = "txtLastName";
+            this.txtLastName.PlaceholderText = "Last Name";
             this.txtLastName.Size = new System.Drawing.Size(112, 27);
             this.txtLastName.TabIndex = 3;
             this.txtLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -124,6 +126,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.Location = new System.Drawing.Point(112, 187);
             this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "sample@example.com";
             this.txtEmail.Size = new System.Drawing.Size(228, 27);
             this.txtEmail.TabIndex = 5;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
@@ -137,31 +140,6 @@
             this.lblGender.Size = new System.Drawing.Size(68, 22);
             this.lblGender.TabIndex = 6;
             this.lblGender.Text = "Gender";
-            // 
-            // rbtnMale
-            // 
-            this.rbtnMale.AutoSize = true;
-            this.rbtnMale.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnMale.Location = new System.Drawing.Point(112, 242);
-            this.rbtnMale.Name = "rbtnMale";
-            this.rbtnMale.Size = new System.Drawing.Size(65, 23);
-            this.rbtnMale.TabIndex = 7;
-            this.rbtnMale.TabStop = true;
-            this.rbtnMale.Text = "Male";
-            this.rbtnMale.UseVisualStyleBackColor = true;
-            // 
-            // rbtnFemale
-            // 
-            this.rbtnFemale.AutoSize = true;
-            this.rbtnFemale.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnFemale.Location = new System.Drawing.Point(260, 242);
-            this.rbtnFemale.Name = "rbtnFemale";
-            this.rbtnFemale.Size = new System.Drawing.Size(80, 23);
-            this.rbtnFemale.TabIndex = 8;
-            this.rbtnFemale.TabStop = true;
-            this.rbtnFemale.Text = "Female";
-            this.rbtnFemale.UseVisualStyleBackColor = true;
-            this.rbtnFemale.CheckedChanged += new System.EventHandler(this.rbtnFemale_CheckedChanged);
             // 
             // lblPhone
             // 
@@ -211,42 +189,6 @@
             this.lblParking.Text = "Do you require parking?";
             this.lblParking.Click += new System.EventHandler(this.lblParking_Click);
             // 
-            // rbtnYes
-            // 
-            this.rbtnYes.AutoSize = true;
-            this.rbtnYes.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnYes.Location = new System.Drawing.Point(220, 417);
-            this.rbtnYes.Name = "rbtnYes";
-            this.rbtnYes.Size = new System.Drawing.Size(54, 23);
-            this.rbtnYes.TabIndex = 14;
-            this.rbtnYes.TabStop = true;
-            this.rbtnYes.Text = "Yes";
-            this.rbtnYes.UseVisualStyleBackColor = true;
-            // 
-            // rbtnNone
-            // 
-            this.rbtnNone.AutoSize = true;
-            this.rbtnNone.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnNone.Location = new System.Drawing.Point(665, 164);
-            this.rbtnNone.Name = "rbtnNone";
-            this.rbtnNone.Size = new System.Drawing.Size(67, 23);
-            this.rbtnNone.TabIndex = 15;
-            this.rbtnNone.TabStop = true;
-            this.rbtnNone.Text = "None";
-            this.rbtnNone.UseVisualStyleBackColor = true;
-            // 
-            // rbtnNo
-            // 
-            this.rbtnNo.AutoSize = true;
-            this.rbtnNo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnNo.Location = new System.Drawing.Point(289, 418);
-            this.rbtnNo.Name = "rbtnNo";
-            this.rbtnNo.Size = new System.Drawing.Size(51, 23);
-            this.rbtnNo.TabIndex = 16;
-            this.rbtnNo.TabStop = true;
-            this.rbtnNo.Text = "No";
-            this.rbtnNo.UseVisualStyleBackColor = true;
-            // 
             // lblRoom
             // 
             this.lblRoom.AutoSize = true;
@@ -256,43 +198,6 @@
             this.lblRoom.Size = new System.Drawing.Size(254, 22);
             this.lblRoom.TabIndex = 17;
             this.lblRoom.Text = "What is your room preference?";
-            // 
-            // rbtnSingle
-            // 
-            this.rbtnSingle.AutoSize = true;
-            this.rbtnSingle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnSingle.Location = new System.Drawing.Point(112, 501);
-            this.rbtnSingle.Name = "rbtnSingle";
-            this.rbtnSingle.Size = new System.Drawing.Size(119, 23);
-            this.rbtnSingle.TabIndex = 18;
-            this.rbtnSingle.TabStop = true;
-            this.rbtnSingle.Text = "Single Room";
-            this.rbtnSingle.UseVisualStyleBackColor = true;
-            // 
-            // rbtnShared
-            // 
-            this.rbtnShared.AutoSize = true;
-            this.rbtnShared.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnShared.Location = new System.Drawing.Point(112, 530);
-            this.rbtnShared.Name = "rbtnShared";
-            this.rbtnShared.Size = new System.Drawing.Size(122, 23);
-            this.rbtnShared.TabIndex = 19;
-            this.rbtnShared.TabStop = true;
-            this.rbtnShared.Text = "Shared Room";
-            this.rbtnShared.UseVisualStyleBackColor = true;
-            // 
-            // rbtnNoRoom
-            // 
-            this.rbtnNoRoom.AutoSize = true;
-            this.rbtnNoRoom.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnNoRoom.Location = new System.Drawing.Point(112, 559);
-            this.rbtnNoRoom.Name = "rbtnNoRoom";
-            this.rbtnNoRoom.Size = new System.Drawing.Size(153, 23);
-            this.rbtnNoRoom.TabIndex = 20;
-            this.rbtnNoRoom.TabStop = true;
-            this.rbtnNoRoom.Text = "No Room Needed";
-            this.rbtnNoRoom.UseVisualStyleBackColor = true;
-            this.rbtnNoRoom.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // lblaRestrictions
             // 
@@ -317,66 +222,6 @@
     " avent app?";
             this.lblList.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // rbtnVegetarian
-            // 
-            this.rbtnVegetarian.AutoSize = true;
-            this.rbtnVegetarian.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnVegetarian.Location = new System.Drawing.Point(665, 191);
-            this.rbtnVegetarian.Name = "rbtnVegetarian";
-            this.rbtnVegetarian.Size = new System.Drawing.Size(101, 23);
-            this.rbtnVegetarian.TabIndex = 23;
-            this.rbtnVegetarian.TabStop = true;
-            this.rbtnVegetarian.Text = "Vegetarian";
-            this.rbtnVegetarian.UseVisualStyleBackColor = true;
-            // 
-            // rbtnGluten
-            // 
-            this.rbtnGluten.AutoSize = true;
-            this.rbtnGluten.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnGluten.Location = new System.Drawing.Point(665, 216);
-            this.rbtnGluten.Name = "rbtnGluten";
-            this.rbtnGluten.Size = new System.Drawing.Size(130, 23);
-            this.rbtnGluten.TabIndex = 24;
-            this.rbtnGluten.TabStop = true;
-            this.rbtnGluten.Text = "Gluten Allergy";
-            this.rbtnGluten.UseVisualStyleBackColor = true;
-            // 
-            // rbtnLactose
-            // 
-            this.rbtnLactose.AutoSize = true;
-            this.rbtnLactose.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnLactose.Location = new System.Drawing.Point(665, 245);
-            this.rbtnLactose.Name = "rbtnLactose";
-            this.rbtnLactose.Size = new System.Drawing.Size(138, 23);
-            this.rbtnLactose.TabIndex = 25;
-            this.rbtnLactose.TabStop = true;
-            this.rbtnLactose.Text = "Lactose Allergy";
-            this.rbtnLactose.UseVisualStyleBackColor = true;
-            // 
-            // rbtnNut
-            // 
-            this.rbtnNut.AutoSize = true;
-            this.rbtnNut.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnNut.Location = new System.Drawing.Point(665, 274);
-            this.rbtnNut.Name = "rbtnNut";
-            this.rbtnNut.Size = new System.Drawing.Size(109, 23);
-            this.rbtnNut.TabIndex = 26;
-            this.rbtnNut.TabStop = true;
-            this.rbtnNut.Text = "Nut Allergy";
-            this.rbtnNut.UseVisualStyleBackColor = true;
-            // 
-            // rbtnShellfish
-            // 
-            this.rbtnShellfish.AutoSize = true;
-            this.rbtnShellfish.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnShellfish.Location = new System.Drawing.Point(665, 303);
-            this.rbtnShellfish.Name = "rbtnShellfish";
-            this.rbtnShellfish.Size = new System.Drawing.Size(145, 23);
-            this.rbtnShellfish.TabIndex = 27;
-            this.rbtnShellfish.TabStop = true;
-            this.rbtnShellfish.Text = "Shellfish Allergy";
-            this.rbtnShellfish.UseVisualStyleBackColor = true;
-            // 
             // lblActivities
             // 
             this.lblActivities.AutoSize = true;
@@ -386,66 +231,6 @@
             this.lblActivities.Size = new System.Drawing.Size(261, 22);
             this.lblActivities.TabIndex = 28;
             this.lblActivities.Text = "What activities will you attend?";
-            // 
-            // rbtnGala
-            // 
-            this.rbtnGala.AutoSize = true;
-            this.rbtnGala.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnGala.Location = new System.Drawing.Point(665, 366);
-            this.rbtnGala.Name = "rbtnGala";
-            this.rbtnGala.Size = new System.Drawing.Size(164, 23);
-            this.rbtnGala.TabIndex = 29;
-            this.rbtnGala.TabStop = true;
-            this.rbtnGala.Text = "Awards Gala Dinner";
-            this.rbtnGala.UseVisualStyleBackColor = true;
-            // 
-            // rbtnLuncheon
-            // 
-            this.rbtnLuncheon.AutoSize = true;
-            this.rbtnLuncheon.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnLuncheon.Location = new System.Drawing.Point(665, 395);
-            this.rbtnLuncheon.Name = "rbtnLuncheon";
-            this.rbtnLuncheon.Size = new System.Drawing.Size(97, 23);
-            this.rbtnLuncheon.TabIndex = 30;
-            this.rbtnLuncheon.TabStop = true;
-            this.rbtnLuncheon.Text = "Luncheon";
-            this.rbtnLuncheon.UseVisualStyleBackColor = true;
-            // 
-            // rbtnHall
-            // 
-            this.rbtnHall.AutoSize = true;
-            this.rbtnHall.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnHall.Location = new System.Drawing.Point(665, 424);
-            this.rbtnHall.Name = "rbtnHall";
-            this.rbtnHall.Size = new System.Drawing.Size(99, 23);
-            this.rbtnHall.TabIndex = 31;
-            this.rbtnHall.TabStop = true;
-            this.rbtnHall.Text = "Town Hall";
-            this.rbtnHall.UseVisualStyleBackColor = true;
-            // 
-            // rbtnYes2
-            // 
-            this.rbtnYes2.AutoSize = true;
-            this.rbtnYes2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnYes2.Location = new System.Drawing.Point(665, 530);
-            this.rbtnYes2.Name = "rbtnYes2";
-            this.rbtnYes2.Size = new System.Drawing.Size(54, 23);
-            this.rbtnYes2.TabIndex = 32;
-            this.rbtnYes2.TabStop = true;
-            this.rbtnYes2.Text = "Yes";
-            this.rbtnYes2.UseVisualStyleBackColor = true;
-            // 
-            // rbtnNo2
-            // 
-            this.rbtnNo2.AutoSize = true;
-            this.rbtnNo2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbtnNo2.Location = new System.Drawing.Point(778, 530);
-            this.rbtnNo2.Name = "rbtnNo2";
-            this.rbtnNo2.Size = new System.Drawing.Size(51, 23);
-            this.rbtnNo2.TabIndex = 33;
-            this.rbtnNo2.TabStop = true;
-            this.rbtnNo2.Text = "No";
-            this.rbtnNo2.UseVisualStyleBackColor = true;
             // 
             // btnInfo
             // 
@@ -472,40 +257,239 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // cbxMale
+            // 
+            this.cbxMale.AutoSize = true;
+            this.cbxMale.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxMale.Location = new System.Drawing.Point(112, 243);
+            this.cbxMale.Name = "cbxMale";
+            this.cbxMale.Size = new System.Drawing.Size(66, 23);
+            this.cbxMale.TabIndex = 36;
+            this.cbxMale.Text = "Male";
+            this.cbxMale.UseVisualStyleBackColor = true;
+            this.cbxMale.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // cbxFemale
+            // 
+            this.cbxFemale.AutoSize = true;
+            this.cbxFemale.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxFemale.Location = new System.Drawing.Point(228, 242);
+            this.cbxFemale.Name = "cbxFemale";
+            this.cbxFemale.Size = new System.Drawing.Size(81, 23);
+            this.cbxFemale.TabIndex = 37;
+            this.cbxFemale.Text = "Female";
+            this.cbxFemale.UseVisualStyleBackColor = true;
+            // 
+            // cbxYes
+            // 
+            this.cbxYes.AutoSize = true;
+            this.cbxYes.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxYes.Location = new System.Drawing.Point(220, 419);
+            this.cbxYes.Name = "cbxYes";
+            this.cbxYes.Size = new System.Drawing.Size(55, 23);
+            this.cbxYes.TabIndex = 38;
+            this.cbxYes.Text = "Yes";
+            this.cbxYes.UseVisualStyleBackColor = true;
+            // 
+            // cbxNo
+            // 
+            this.cbxNo.AutoSize = true;
+            this.cbxNo.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxNo.Location = new System.Drawing.Point(281, 419);
+            this.cbxNo.Name = "cbxNo";
+            this.cbxNo.Size = new System.Drawing.Size(52, 23);
+            this.cbxNo.TabIndex = 39;
+            this.cbxNo.Text = "No";
+            this.cbxNo.UseVisualStyleBackColor = true;
+            // 
+            // cbxSingle
+            // 
+            this.cbxSingle.AutoSize = true;
+            this.cbxSingle.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxSingle.Location = new System.Drawing.Point(112, 501);
+            this.cbxSingle.Name = "cbxSingle";
+            this.cbxSingle.Size = new System.Drawing.Size(120, 23);
+            this.cbxSingle.TabIndex = 40;
+            this.cbxSingle.Text = "Single Room";
+            this.cbxSingle.UseVisualStyleBackColor = true;
+            // 
+            // cbxShared
+            // 
+            this.cbxShared.AutoSize = true;
+            this.cbxShared.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxShared.Location = new System.Drawing.Point(109, 530);
+            this.cbxShared.Name = "cbxShared";
+            this.cbxShared.Size = new System.Drawing.Size(123, 23);
+            this.cbxShared.TabIndex = 41;
+            this.cbxShared.Text = "Shared Room";
+            this.cbxShared.UseVisualStyleBackColor = true;
+            // 
+            // cbxNoRoom
+            // 
+            this.cbxNoRoom.AutoSize = true;
+            this.cbxNoRoom.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxNoRoom.Location = new System.Drawing.Point(109, 559);
+            this.cbxNoRoom.Name = "cbxNoRoom";
+            this.cbxNoRoom.Size = new System.Drawing.Size(154, 23);
+            this.cbxNoRoom.TabIndex = 42;
+            this.cbxNoRoom.Text = "No Room Needed";
+            this.cbxNoRoom.UseVisualStyleBackColor = true;
+            // 
+            // cbxNone
+            // 
+            this.cbxNone.AutoSize = true;
+            this.cbxNone.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxNone.Location = new System.Drawing.Point(665, 164);
+            this.cbxNone.Name = "cbxNone";
+            this.cbxNone.Size = new System.Drawing.Size(68, 23);
+            this.cbxNone.TabIndex = 43;
+            this.cbxNone.Text = "None";
+            this.cbxNone.UseVisualStyleBackColor = true;
+            // 
+            // cbxVegetarian
+            // 
+            this.cbxVegetarian.AutoSize = true;
+            this.cbxVegetarian.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxVegetarian.Location = new System.Drawing.Point(665, 189);
+            this.cbxVegetarian.Name = "cbxVegetarian";
+            this.cbxVegetarian.Size = new System.Drawing.Size(102, 23);
+            this.cbxVegetarian.TabIndex = 44;
+            this.cbxVegetarian.Text = "Vegetarian";
+            this.cbxVegetarian.UseVisualStyleBackColor = true;
+            // 
+            // cbxGluten
+            // 
+            this.cbxGluten.AutoSize = true;
+            this.cbxGluten.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxGluten.Location = new System.Drawing.Point(665, 218);
+            this.cbxGluten.Name = "cbxGluten";
+            this.cbxGluten.Size = new System.Drawing.Size(131, 23);
+            this.cbxGluten.TabIndex = 45;
+            this.cbxGluten.Text = "Gluten Allergy";
+            this.cbxGluten.UseVisualStyleBackColor = true;
+            // 
+            // cbxLactose
+            // 
+            this.cbxLactose.AutoSize = true;
+            this.cbxLactose.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxLactose.Location = new System.Drawing.Point(665, 247);
+            this.cbxLactose.Name = "cbxLactose";
+            this.cbxLactose.Size = new System.Drawing.Size(139, 23);
+            this.cbxLactose.TabIndex = 46;
+            this.cbxLactose.Text = "Lactose Allergy";
+            this.cbxLactose.UseVisualStyleBackColor = true;
+            // 
+            // cbxNut
+            // 
+            this.cbxNut.AutoSize = true;
+            this.cbxNut.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxNut.Location = new System.Drawing.Point(665, 276);
+            this.cbxNut.Name = "cbxNut";
+            this.cbxNut.Size = new System.Drawing.Size(110, 23);
+            this.cbxNut.TabIndex = 47;
+            this.cbxNut.Text = "Nut Allergy";
+            this.cbxNut.UseVisualStyleBackColor = true;
+            // 
+            // cbxShellfish
+            // 
+            this.cbxShellfish.AutoSize = true;
+            this.cbxShellfish.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxShellfish.Location = new System.Drawing.Point(665, 305);
+            this.cbxShellfish.Name = "cbxShellfish";
+            this.cbxShellfish.Size = new System.Drawing.Size(146, 23);
+            this.cbxShellfish.TabIndex = 48;
+            this.cbxShellfish.Text = "Shellfish Allergy";
+            this.cbxShellfish.UseVisualStyleBackColor = true;
+            // 
+            // cbxGala
+            // 
+            this.cbxGala.AutoSize = true;
+            this.cbxGala.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxGala.Location = new System.Drawing.Point(665, 366);
+            this.cbxGala.Name = "cbxGala";
+            this.cbxGala.Size = new System.Drawing.Size(165, 23);
+            this.cbxGala.TabIndex = 49;
+            this.cbxGala.Text = "Awards Gala Dinner";
+            this.cbxGala.UseVisualStyleBackColor = true;
+            // 
+            // cbxLuncheon
+            // 
+            this.cbxLuncheon.AutoSize = true;
+            this.cbxLuncheon.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxLuncheon.Location = new System.Drawing.Point(665, 395);
+            this.cbxLuncheon.Name = "cbxLuncheon";
+            this.cbxLuncheon.Size = new System.Drawing.Size(98, 23);
+            this.cbxLuncheon.TabIndex = 50;
+            this.cbxLuncheon.Text = "Luncheon";
+            this.cbxLuncheon.UseVisualStyleBackColor = true;
+            // 
+            // cbxHall
+            // 
+            this.cbxHall.AutoSize = true;
+            this.cbxHall.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxHall.Location = new System.Drawing.Point(665, 424);
+            this.cbxHall.Name = "cbxHall";
+            this.cbxHall.Size = new System.Drawing.Size(100, 23);
+            this.cbxHall.TabIndex = 51;
+            this.cbxHall.Text = "Town Hall";
+            this.cbxHall.UseVisualStyleBackColor = true;
+            // 
+            // cbxYes2
+            // 
+            this.cbxYes2.AutoSize = true;
+            this.cbxYes2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxYes2.Location = new System.Drawing.Point(665, 530);
+            this.cbxYes2.Name = "cbxYes2";
+            this.cbxYes2.Size = new System.Drawing.Size(55, 23);
+            this.cbxYes2.TabIndex = 52;
+            this.cbxYes2.Text = "Yes";
+            this.cbxYes2.UseVisualStyleBackColor = true;
+            // 
+            // cbxNo2
+            // 
+            this.cbxNo2.AutoSize = true;
+            this.cbxNo2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbxNo2.Location = new System.Drawing.Point(778, 530);
+            this.cbxNo2.Name = "cbxNo2";
+            this.cbxNo2.Size = new System.Drawing.Size(52, 23);
+            this.cbxNo2.TabIndex = 53;
+            this.cbxNo2.Text = "No";
+            this.cbxNo2.UseVisualStyleBackColor = true;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1017, 703);
+            this.Controls.Add(this.cbxNo2);
+            this.Controls.Add(this.cbxYes2);
+            this.Controls.Add(this.cbxHall);
+            this.Controls.Add(this.cbxLuncheon);
+            this.Controls.Add(this.cbxGala);
+            this.Controls.Add(this.cbxShellfish);
+            this.Controls.Add(this.cbxNut);
+            this.Controls.Add(this.cbxLactose);
+            this.Controls.Add(this.cbxGluten);
+            this.Controls.Add(this.cbxVegetarian);
+            this.Controls.Add(this.cbxNone);
+            this.Controls.Add(this.cbxNoRoom);
+            this.Controls.Add(this.cbxShared);
+            this.Controls.Add(this.cbxSingle);
+            this.Controls.Add(this.cbxNo);
+            this.Controls.Add(this.cbxYes);
+            this.Controls.Add(this.cbxFemale);
+            this.Controls.Add(this.cbxMale);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnInfo);
-            this.Controls.Add(this.rbtnNo2);
-            this.Controls.Add(this.rbtnYes2);
-            this.Controls.Add(this.rbtnHall);
-            this.Controls.Add(this.rbtnLuncheon);
-            this.Controls.Add(this.rbtnGala);
             this.Controls.Add(this.lblActivities);
-            this.Controls.Add(this.rbtnShellfish);
-            this.Controls.Add(this.rbtnNut);
-            this.Controls.Add(this.rbtnLactose);
-            this.Controls.Add(this.rbtnGluten);
-            this.Controls.Add(this.rbtnVegetarian);
             this.Controls.Add(this.lblList);
             this.Controls.Add(this.lblaRestrictions);
-            this.Controls.Add(this.rbtnNoRoom);
-            this.Controls.Add(this.rbtnShared);
-            this.Controls.Add(this.rbtnSingle);
             this.Controls.Add(this.lblRoom);
-            this.Controls.Add(this.rbtnNo);
-            this.Controls.Add(this.rbtnNone);
-            this.Controls.Add(this.rbtnYes);
             this.Controls.Add(this.lblParking);
             this.Controls.Add(this.txtEmergency);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.lblEmergency);
             this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.rbtnFemale);
-            this.Controls.Add(this.rbtnMale);
             this.Controls.Add(this.lblGender);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
@@ -529,34 +513,34 @@
         private Label lblEmail;
         private TextBox txtEmail;
         private Label lblGender;
-        private RadioButton rbtnMale;
-        private RadioButton rbtnFemale;
         private Label lblPhone;
         private Label lblEmergency;
         private TextBox txtPhone;
         private TextBox txtEmergency;
         private Label lblParking;
-        private RadioButton rbtnYes;
-        private RadioButton rbtnNone;
-        private RadioButton rbtnNo;
         private Label lblRoom;
-        private RadioButton rbtnSingle;
-        private RadioButton rbtnShared;
-        private RadioButton rbtnNoRoom;
         private Label lblaRestrictions;
         private Label lblList;
-        private RadioButton rbtnVegetarian;
-        private RadioButton rbtnGluten;
-        private RadioButton rbtnLactose;
-        private RadioButton rbtnNut;
-        private RadioButton rbtnShellfish;
         private Label lblActivities;
-        private RadioButton rbtnGala;
-        private RadioButton rbtnLuncheon;
-        private RadioButton rbtnHall;
-        private RadioButton rbtnYes2;
-        private RadioButton rbtnNo2;
         private Button btnInfo;
         private Button btnSubmit;
+        private CheckBox cbxMale;
+        private CheckBox cbxFemale;
+        private CheckBox cbxYes;
+        private CheckBox cbxNo;
+        private CheckBox cbxSingle;
+        private CheckBox cbxShared;
+        private CheckBox cbxNoRoom;
+        private CheckBox cbxNone;
+        private CheckBox cbxVegetarian;
+        private CheckBox cbxGluten;
+        private CheckBox cbxLactose;
+        private CheckBox cbxNut;
+        private CheckBox cbxShellfish;
+        private CheckBox cbxGala;
+        private CheckBox cbxLuncheon;
+        private CheckBox cbxHall;
+        private CheckBox cbxYes2;
+        private CheckBox cbxNo2;
     }
 }

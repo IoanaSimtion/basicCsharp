@@ -74,7 +74,27 @@ namespace basic
                 string text = "";
                 text += "Your name is " + txtFirstName.Text + " " + txtLastName.Text + "\n";
                 text += "Your email adress is " + txtEmail.Text + "\n";
-                text += "The emergency contact is" + txtEmergency.Text + "\n";
+                text += "The emergency contact is " + txtEmergency.Text + "\n";
+                text += cbxNoRoom.Checked ? "No room selected\n" : "";
+                text += cbxSingle.Checked ? "Single  room selected\n" : "";
+                text += cbxShared.Checked ? "Shared room selected\n" : "";
+                if (!cbxNone.Checked)
+                {
+                    text += "Dietary restrictions: ";
+                    text+= cbxVegetarian.Checked ? "vegetarian " : "";
+                    text += cbxGluten.Checked ? "gluten allergy " : "";
+                    text += cbxLactose.Checked ? "lactose allergy " : "";
+                    text += cbxNut.Checked ? "nut allergy " : "";
+                    text += cbxShellfish.Checked ? "shellfish allergy " : "";
+                    text += "\n";
+                }
+
+                text += "You will attend ";
+                text += cbxGala.Checked ? "Awards Gala Dinner " : "";
+                text += cbxLuncheon.Checked ? "Luncheon " : "";
+                text += cbxHall.Checked ? "Town Hall" : "";
+
+                text += cbxYes2.Checked ? "\nYou will see the list" : "\nYou will not see the list";
 
                 MessageBox.Show(text, "Info", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
@@ -101,9 +121,14 @@ namespace basic
                 text += "Enter your email adress\n";
             }
 
-            if(!rbtnFemale.Checked && !rbtnMale.Checked)
+            if(!cbxFemale.Checked && !cbxMale.Checked)
             {
                 text += "Select your gender\n";
+            }
+
+            if (cbxFemale.Checked && cbxMale.Checked)
+            {
+                text += "Select only one gender\n";
             }
 
             if(txtPhone.Text.Equals(""))
@@ -116,30 +141,53 @@ namespace basic
                 text += "Enter an emergency contact\n";
             }
 
-            if(!rbtnYes.Checked && !rbtnNo.Checked)
+            if(!cbxYes.Checked && !cbxNo.Checked)
             {
                 text += "Do you require parking?\n";
+            } 
+            
+            if(cbxYes.Checked && cbxNo.Checked)
+            {
+                text += "Invalid parking selection\n";
             }
 
-            if(!rbtnSingle.Checked && !rbtnShared.Checked && !rbtnNoRoom.Checked)
+            if(!cbxSingle.Checked && !cbxShared.Checked && !cbxNoRoom.Checked)
             {
                 text += "Select your room preference\n";
             }
 
-            if(!rbtnNone.Checked && !rbtnVegetarian.Checked && !rbtnGluten.Checked && !rbtnLactose.Checked && !rbtnNut.Checked && !rbtnShellfish.Checked)
+            if(cbxSingle.Checked && cbxShared.Checked && cbxNoRoom.Checked)
+            {
+                text += "Invalid room selection\n";
+            }
+
+            if(!cbxNone.Checked && !cbxVegetarian.Checked && !cbxGluten.Checked && !cbxLactose.Checked && !cbxNut.Checked && !cbxShellfish.Checked)
             {
                 text += "Select your dietary restrictions\n";
             }
 
-            if(!rbtnGala.Checked && !rbtnLuncheon.Checked && !rbtnHall.Checked)
+            if (cbxNone.Checked)
+            {
+                if(cbxVegetarian.Checked || cbxGluten.Checked || cbxLactose.Checked || cbxNut.Checked || cbxShellfish.Checked)
+                {
+                    text += "Invalid dietary restrictions\n";
+                }
+            }
+
+            if(!cbxGala.Checked && !cbxLuncheon.Checked && !cbxHall.Checked)
             {
                 text += "Select what activities you will attend\n";
             }
 
-            if(!rbtnYes2.Checked && !rbtnNo2.Checked)
+            if(!cbxYes2.Checked && !cbxNo2.Checked)
             {
-                text += "Do you want to see the list\n";
+                text += "Do you want to see the list?\n";
             }
+
+             if(cbxYes2.Checked && cbxNo2.Checked)
+            {
+                text += "Invalid list preference selection\n";
+            }            
 
             if (text.Length > 0)
             {
@@ -155,6 +203,11 @@ namespace basic
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Succes", "Data registered", MessageBoxButtons.OK);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

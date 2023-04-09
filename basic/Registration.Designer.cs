@@ -98,7 +98,6 @@
             this.txtFirstName.Size = new System.Drawing.Size(102, 27);
             this.txtFirstName.TabIndex = 2;
             this.txtFirstName.Tag = "";
-            this.txtFirstName.Text = "First Name";
             this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // txtLastName
@@ -108,7 +107,6 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(112, 27);
             this.txtLastName.TabIndex = 3;
-            this.txtLastName.Text = "Last Name";
             this.txtLastName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblEmail
@@ -128,7 +126,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(228, 27);
             this.txtEmail.TabIndex = 5;
-            this.txtEmail.Text = "sample@example.com";
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblGender
@@ -463,6 +460,9 @@
             // 
             // btnSubmit
             // 
+            this.btnSubmit.AllowDrop = true;
+            this.btnSubmit.AutoEllipsis = true;
+            this.btnSubmit.Enabled = false;
             this.btnSubmit.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSubmit.Location = new System.Drawing.Point(889, 652);
             this.btnSubmit.Name = "btnSubmit";
